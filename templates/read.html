@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dialogue Read Page</title>
+<script>
+function speak(text) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/speak', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.responseType = 'blob';
+
+    xhr.onload = function() {
+        if (this.status == 200) {
+            var blob = new Blob([this.response], { type: 'audio/mp3' });
+            var audio = new Audio(URL.createObjectURL(blob));
+            audio.play();
+        }
+    };
+
+    xhr.send('text=' + encodeURIComponent(text));
+}
+</script>
+<style>
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.dialogues {
+    flex: 1;
+    margin-right: 20px; /* Adjust the space between dialogues and image */
+}
+.word {
+    cursor: pointer;
+    margin-right: 5px; /* Space between words */
+}
+.word:hover {
+    text-decoration: underline;
+}
+.image-container {
+    flex: 1;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+    <form action="/read" method="get">
+        <label for="page-select">Choose a page:</label>
+        <select name="page" id="page-select" onchange="this.form.submit()">
+            {% for page in pages %}
+                <option value="{{ page }}">{{ page }}</option>
+            {% endfor %}
+        </select>
+    </form>
+    
+    <div class="container">
+        <div class="dialogues">
+            <!-- 对话内容的显示 -->
+            {% for sentence in dialogues %}
+            <p>
+                {% for word in sentence.split() %}
+                <span class="word" onclick="speak('{{ word }}')">{{ word }}</span>
+                {% endfor %}
+            </p>
+            {% endfor %}
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename=image_file) }}" alt="Dialogue Image">
+        </div>
+    </div>
+</body>
+</html>
