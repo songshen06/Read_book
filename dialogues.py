@@ -138,7 +138,101 @@ pages = {
             "I want to buy it."
         ],
         "image": "page13.png"
-    }
+    },
+    "page14": {
+    "dialogues": [
+        "The sheep ran up the hill.",
+        "The wolf ran up the hill.",
+        "The sheep ran down the hill.",
+        "The wolf ran down the hill.",
+        "Once upon a time, there was a boy. He looked after sheep every day. The boy was bored.",
+        "One day, the boy ran to the village. He shouted, 'Wolf, wolf!'"
+    ],
+    "image": "page14.png"
+},
+    "page15": {
+    "dialogues": [
+        "Everyone ran up the hill. There was no wolf. The boy laughed.",
+        "The next day, the boy ran to the village again. 'Wolf, wolf!' he shouted.",
+        "The people ran up the hill. There was no wolf. The people were angry.",
+        "Then one day, a wolf came up the hill.",
+        "The boy ran to the village. But the people didn't run up the hill. They said, 'Don't tell lies!'",
+        "The wolf ate all the sheep. The boy learnt a lesson and wouldn't tell lies again."
+    ],
+    "image": "page15.png"
+},
+
+    "page16": {
+    "dialogues": [
+        "There was a boy. He looked after sheep.",
+        "The next day, the boy ran to the village again. 'Wolf, wolf!' he shouted.",
+        "One day, Ben and his friends played football together. The football broke a house's window. The other boys ran, but Ben...",
+        "played",
+        "ran",
+        "broke",
+        "said"
+    ],
+    "image": "page16.png"
+},
+    "page27": {
+        "dialogues": [
+            "What's happening now?",
+            "Tom is singing. Can you hear?",
+            "Yes.",
+            "I can hear the violin.",
+            "And now Sam is playing the violin.",
+            "Is it your mum's birthday?",
+            "No, it's Mother's Day today.",
+            "It's a surprise party for our mothers. They are very happy. Now they are clapping."
+        ],
+        "image": "page27.png"
+    },
+    "page26": {
+        "dialogues": [
+            "Happy Mother's Day! A present for you.",
+            "Oh, what a surprise. Thank you.",
+            "Here you are.",
+            "Thank you, Mum.",
+            "What are you doing, Lingling?",
+            "We're having a party. Amy is playing the piano."
+        ],
+        "image": "page26.png"
+    },
+    "page29": {
+    "dialogues": [
+        "Dad, it's a special day today.",
+        "Why?",
+        "It's Father's Day. Happy Father's Day!",
+        "Thank you.",
+        "Today is Father's Day. Daming is making a card for his father. He's drawing books and birds. These are his father's favourite things. He's writing a message to his father, too. Can you read it?",
+        "Dear Dad, You're so special. Thank you for everything. Love, Daming."
+    ],
+    "image": "page29.png"
+
+},
+"page30": {
+    "dialogues": [
+        "It's Father's Day. Amy is...",
+        "Dear Dad, You're so special. Thank you for everything. Love, Sam.",
+        "What are you doing on Father's Day?",
+        "Are you painting a picture on this special day?",
+        "There are lots of nice words for you to say. Make your father happy on Father's Day."
+    ],
+    "image": "page30.png"
+},
+"page31": {
+    "dialogues": [
+        "It's Father's Day.",
+        "You're playing the violin for your father.",
+        "Make Father's Day cards.",
+        "Dear Dad, you are so special...",
+        "Dear Dad, You're so special. Thank you for everything. Love, Jim."
+    ],
+    "image": "page31.png"
 }
+
+}
+
+
 
 
